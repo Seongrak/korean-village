@@ -10,16 +10,23 @@ function IntroductionSection() {
       />
 
       <div className="intro-text">
-        <h2>Experience Authentic Korean Dining</h2>
+        <h2>
+          Experience <span class="highlight">Authentic Korean Dining</span>
+        </h2>
         <p>
-          Since 1978, Korean Village has brought the soul of Korean cuisine to
-          Toronto.
+          Since <span class="highlight-red">1978</span>, Korean Village has
+          brought the soul of
+          <span class="highlight"> Korean cuisine</span> to Toronto.
         </p>
         <p>
-          Family-owned and rooted in tradition, we serve comforting classics and
-          bold flavors.
+          <span class="highlight">Family-owned</span> and rooted in tradition,
+          we serve
+          <span class="highlight"> comforting classics</span> and{" "}
+          <span class="highlight"> bold flavors</span>.
         </p>
-        <p>Come for the food, stay for the warmth.</p>
+        <p>
+          Come for the food, <span class="highlight">stay for the warmth</span>.
+        </p>
       </div>
     </section>
   );
