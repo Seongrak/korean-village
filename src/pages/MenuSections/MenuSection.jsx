@@ -13,7 +13,9 @@ function MenuSection({ title, items }) {
             <img src={item.image} alt={item.name} className="menu-img" />
           )}
           <div className="item-info">
-            <h3>{item.name}</h3>
+            <h3>
+              {item.name} {item.spicy && <span className="spicy-icon">🌶️</span>}
+            </h3>
             <p className="item-desc">{item.desc}</p>
           </div>
           <span className="item-price">{item.price}</span>

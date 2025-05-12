@@ -11,6 +11,7 @@ export const menuData = [
         name: "Ddukbokki",
         price: "$14.99",
         desc: "Spicy rice cakes with optional egg, fishcake or bulgogi",
+        spicy: true,
       },
       {
         name: "Fried Dumplings (5pcs)",
@@ -41,6 +42,7 @@ export const menuData = [
         name: "Kimchi Pancake",
         price: "$20.99",
         desc: "Spicy pancake with fermented kimchi",
+        spicy: true,
       },
       {
         name: "Vegetable Pancake",
@@ -56,11 +58,13 @@ export const menuData = [
         name: "Kampungki",
         price: "Small $17.99 / Large $26.99",
         desc: "Sweet & spicy crispy chicken",
+        spicy: true,
       },
       {
         name: "Spicy Pork Stir-Fry",
         price: "Small $18.99 / Large $27.99",
         desc: "Pork stir-fried in gochujang sauce",
+        spicy: true,
       },
     ],
   },
@@ -86,6 +90,7 @@ export const menuData = [
         name: "Spicy Chicken Dinner",
         price: "$33.99",
         desc: "Chicken stir-fried in spicy Korean sauce",
+        spicy: true,
       },
       {
         name: "Katsu Dinner",
@@ -116,6 +121,7 @@ export const menuData = [
         name: "Spicy Chicken (300g)",
         price: "$35.99",
         desc: "Spicy grilled chicken at your table",
+        spicy: true,
       },
       {
         name: "Bulgogi (350g)",
@@ -142,6 +148,7 @@ export const menuData = [
         name: "Bibim Naengmyun",
         price: "$17.99",
         desc: "Spicy cold buckwheat noodles with vegetables",
+        spicy: true,
       },
       {
         name: "Mul Bibim Naengmyun",
@@ -154,7 +161,12 @@ export const menuData = [
         desc: "Add 2 strips of LA Kalbi to your noodle dish",
       },
       { name: "Jajangmyun", price: "$15.99", desc: "Black bean sauce noodles" },
-      { name: "Jjamppong", price: "$19.99", desc: "Spicy seafood noodle soup" },
+      {
+        name: "Jjamppong",
+        price: "$19.99",
+        desc: "Spicy seafood noodle soup",
+        spicy: true,
+      },
       {
         name: "Jajangmyun Combo",
         price: "$59.99",
@@ -180,16 +192,19 @@ export const menuData = [
         name: "Kimchi Soondubu",
         price: "$16.99",
         desc: "Spicy tofu stew with kimchi",
+        spicy: true,
       },
       {
         name: "Kimchi Stew",
         price: "$16.99",
         desc: "Classic Korean kimchi jjigae",
+        spicy: true,
       },
       {
         name: "Yukgaejang",
         price: "$21.99",
         desc: "Spicy beef soup with vegetables and egg",
+        spicy: true,
       },
       { name: "Kalbi Tang", price: "$22.99", desc: "Beef short rib soup" },
       {
@@ -318,6 +333,7 @@ export const menuData = [
         name: "Ddukbokki",
         price: "$14.99",
         desc: "Spicy rice cakes without fishcake or egg",
+        spicy: true,
       },
       {
         name: "Japchae",
@@ -358,6 +374,7 @@ export const menuData = [
         name: "Bibim Naengmyun (No egg/broth)",
         price: "$16.99",
         desc: "Vegan spicy cold noodles",
+        spicy: true,
       },
     ],
   },
