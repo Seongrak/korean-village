@@ -1,28 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import { menuData } from "./MenuSections/menuData";
+import MenuSection from "./MenuSections/MenuSection";
 import "./Menu.css";
-import DrinksSection from "./MenuSections/DrinksSection";
-import DishesSection from "./MenuSections/DishesSection";
-import BBQSection from "./MenuSections/BBQSection";
 
 function Menu() {
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  const [activeTab, setActiveTab] = useState(menuData[0].category);
 
   return (
-    <section className="menu-section">
+    <section className="menu-section" id="top">
       <h1 className="menu-title">Our Menu</h1>
 
       <div className="menu-nav">
-        <button onClick={() => scrollToSection("dishes")}>Dishes</button>
-        <button onClick={() => scrollToSection("bbq")}>BBQ On The Table</button>
-        <button onClick={() => scrollToSection("drinks")}>Drinks</button>
+        {menuData.map((section, i) => (
+          <button
+            key={i}
+            className={`menu-button ${
+              activeTab === section.category ? "active" : ""
+            }`}
+            onClick={() => setActiveTab(section.category)}
+          >
+            {section.category}
+          </button>
+        ))}
       </div>
 
-      <DishesSection />
-      <BBQSection />
-      <DrinksSection />
+      {/* ✅ 선택된 탭만 보여줌 */}
+      {menuData
+        .filter((section) => section.category === activeTab)
+        .map((section, i) => (
+          <MenuSection
+            key={activeTab}
+            title={section.category}
+            items={section.items}
+          />
+        ))}
+
+      {/* 위로 가는 버튼 (모바일 전용) */}
+      <a href="#top" className="scroll-top-button">
+        ⬆ Back to Top
+      </a>
     </section>
   );
 }

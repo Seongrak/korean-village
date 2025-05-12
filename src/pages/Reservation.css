@@ -1,0 +1,25 @@
+.reservation-page {
+  padding: 80px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+
+.reservation-page h1 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.reservation-page p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.reservation-page .hours-address {
+  margin-top: 24px;
+  padding-top: 0;
+}

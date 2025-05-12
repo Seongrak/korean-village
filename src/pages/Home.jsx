@@ -3,12 +3,14 @@ import "./Home.css";
 import IntroductionSection from "./HomeSections/IntroductionSection";
 import GallerySection from "./HomeSections/GallerySection";
 import HighlightSection from "./HomeSections/HighlightSection";
+import HeroSection from "../components/HeroSection";
 
 function Home() {
   return (
     <main>
-      <IntroductionSection />
+      <HeroSection />
       <GallerySection />
+      <IntroductionSection />
       <HighlightSection />
     </main>
   );

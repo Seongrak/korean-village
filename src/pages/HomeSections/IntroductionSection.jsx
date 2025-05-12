@@ -3,30 +3,26 @@ import React from "react";
 function IntroductionSection() {
   return (
     <section className="intro-section">
-      <img
-        src="/outside.avif"
-        alt="Korean Village Restaurant Exterior"
-        className="intro-banner"
-      />
-
-      <div className="intro-text">
-        <h2>
-          Experience <span class="highlight">Authentic Korean Dining</span>
-        </h2>
-        <p>
-          Since <span class="highlight-red">1978</span>, Korean Village has
-          brought the soul of
-          <span class="highlight"> Korean cuisine</span> to Toronto.
-        </p>
-        <p>
-          <span class="highlight">Family-owned</span> and rooted in tradition,
-          we serve
-          <span class="highlight"> comforting classics</span> and{" "}
-          <span class="highlight"> bold flavors</span>.
-        </p>
-        <p>
-          Come for the food, <span class="highlight">stay for the warmth</span>.
-        </p>
+      <img src="../boss.jpeg" alt="Owner and Family" className="intro-bg" />
+      <div className="intro-overlay">
+        <div className="intro-content">
+          <h2>More Than a Restaurant, It’s a Legacy</h2>
+          <p>
+            Korean Village has been proudly family-owned and operated since{" "}
+            <strong>1978</strong>, built on generations of tradition, love, and
+            resilience.
+          </p>
+          <p>
+            Today, it continues under the care of <strong>Jason Lee</strong>,
+            the son of our beloved founder, who honors her legacy with every
+            dish and warm welcome.
+          </p>
+          <p>
+            Whether you’re here for comforting Korean flavors or a sense of
+            home, Jason and our team are here to serve — with pride, heart, and
+            history.
+          </p>
+        </div>
       </div>
     </section>
   );
